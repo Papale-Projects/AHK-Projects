@@ -17,8 +17,8 @@
 >[![Video](https://camo.githubusercontent.com/e022ea1af736202a29bf9792403a37f28aa476c0cd4643b76ab6cc31fffab6e5/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f7749646346364b554849452f64656661756c742e6a7067)](https://www.youtube.com/watch?v=wIdcF6KUHIE)
 
 [MasterFocus/RandomBezier](https://github.com/MasterFocus/AutoHotkey/tree/master/Functions/RandomBezier)
->Moves the mouse through a random Bézier path
->*Note: I no longer use this function for mouse movement, but it was used earlier on in my scripts.
+>Moves the mouse through a random Bézier path 
+>*Note: I no longer use this function for mouse movement, but it was used earlier on in my scripts. 
 
     RandomBezier( X0, Y0, Xf, Yf, O="" ) {
         Time := RegExMatch(O,"i)T(\d+)",M)&&(M1>0)? M1: 200
