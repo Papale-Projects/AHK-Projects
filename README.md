@@ -18,6 +18,7 @@
 
 [MasterFocus/RandomBezier](https://github.com/MasterFocus/AutoHotkey/tree/master/Functions/RandomBezier)
 >Moves the mouse through a random Bézier path
+>
 >Note: I no longer use this function for mouse movement, but it was used earlier on in my scripts.
 
     RandomBezier( X0, Y0, Xf, Yf, O="" ) {
