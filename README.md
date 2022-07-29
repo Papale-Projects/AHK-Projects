@@ -61,3 +61,85 @@
         MouseMove, X%N%, Y%N%, 0
         Return N+1
      }
+
+## [ HowDoIStayInDreams / WindHumanMouse ](https://github.com/HowDoIStayInDreams/WindHumanMouse/blob/master/WindHumanMouse.ahk)
+
+>The original creator is [BenLand100](https://github.com/BenLand100), and he wrote this algorithm in Pascal. Since the original it has been converted into Java, C#, and Python.
+HowDoIStayInDreams converted this code from C# in AHK.
+
+***Description***   
+A simple linear interpolation that satisfied any human-mouse-speed assumptions would be easily identifiable as non-human when the angular distribution was observed, as it would have segments of discrete angles for each line. Replaying a finite set of real mouse movements would also be identifiable observing angular distributions. It is therefore critical to have some random algorithm that creates an acceptable angular distribution of steps, while still moving to a destination. The time distribution is relatively straightforward to satisfy, but the generation of paths with sufficiently human qualities is where WindMouse comes in.    
+[Full Description Here](https://ben.land/post/2021/04/25/windmouse-human-mouse-movement/#windmouse)
+
+    WindMouse(xs, ys, xe, ye, gravity, wind, minWait, maxWait, maxStep, targetArea, sleepsArray){
+	windX:= 0, windY:= 0
+	veloX:= 0, veloY:= 0
+	newX:= Round(xs)
+	newY:= Round(ys)
+	waitDiff:= maxWait - minWait
+	sqrt2:= Sqrt(2)
+	sqrt3:= Sqrt(3)
+	sqrt5:= Sqrt(5)
+	dist:= Hypot(xe - xs, ye - ys)
+	i:= 1
+	stepVar:= maxStep
+	Loop{
+		wind:= Min(wind, dist)
+		if(dist >= targetArea){
+			windX:= windX / sqrt3 + (random(round(wind) * 2 + 1) - wind) / sqrt5
+			windY:= windY / sqrt3 + (random(round(wind) * 2 + 1) - wind) / sqrt5
+			maxStep:= RandomWeight(stepVar/2, (stepVar+(stepVar/2))/2, stepVar)
+			}else{
+				windX:= windX / sqrt2
+				windY:= windY / sqrt2
+				if(maxStep < 3){
+					maxStep:= 1
+				}else{
+					maxStep:= maxStep / 3
+				}
+			}
+			veloX += windX
+			veloY += windY
+			veloX:= veloX + gravity * ( xe - xs ) / dist
+			veloY:= veloY + gravity * ( ye - ys ) / dist
+			if(Hypot(veloX, veloY) > maxStep){
+				randomDist:= maxStep / 2 + (Round(random(maxStep)) / 2)
+				veloMag:= Hypot(veloX, veloY)
+				veloX:= ( veloX / veloMag ) * randomDist
+				veloY:= ( veloY / veloMag ) * randomDist
+			}
+			oldX:= Round(xs)
+			oldY:= Round(ys)
+			xs:= xs + veloX
+			ys:= ys + veloY
+			dist:= Hypot(xe - xs, ye - ys)
+			if(dist <= 1){
+				Break
+			}
+			newX:= Round(xs)
+			newY:= Round(ys)
+			if(oldX != newX) or (oldY != newY){
+				MouseMove, newX, newY
+			}
+			step:= Hypot(xs - oldX, ys - oldY)
+			c:= sleepsArray.Count()
+			if(i > c){
+				lastSleeps:= Round(sleepsArray[c])
+				Random, w, lastSleeps, lastSleeps+1
+				wait:= Max(Round(abs(w)),1)
+				Sleep(wait)
+			}else{
+				waitSleep:= Round(sleepsArray[i])
+				Random, w, waitSleep, waitSleep+1
+				wait:= Max(Round(abs(w)),1)
+				Sleep(wait)
+				i++
+			}
+		}
+	endX:= Round(xe)
+	endY:= Round(ye)
+		if(endX != newX) or (endY != newY){
+			MouseMove, endX, endY
+	    }
+	i:= 1
+	}
