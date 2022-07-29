@@ -17,14 +17,13 @@
 
 >ShinsImageScanClass is an AutoHotKey class designed for user friendliness and performance in mind, capable of searching for images and pixels extremely fast and also with background window support it's versatile and lightweight, with no additional dependencies. It also supports 32 and 64 bit.
 
->**Youtube Tutorial Video**
->
+>**Youtube Tutorial Video**  
 >[![Video](https://camo.githubusercontent.com/e022ea1af736202a29bf9792403a37f28aa476c0cd4643b76ab6cc31fffab6e5/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f7749646346364b554849452f64656661756c742e6a7067)](https://www.youtube.com/watch?v=wIdcF6KUHIE)
 
 ## [MasterFocus/RandomBezier](https://github.com/MasterFocus/AutoHotkey/tree/master/Functions/RandomBezier)
 
->Moves the mouse through a random Bézier path
->*Note: I no longer use this function for mouse movement, but it was used earlier on in my scripts.
+>Moves the mouse through a random Bézier path  
+>*Note: I no longer use this function for mouse movement, but it was used earlier on in my scripts.  
 
     RandomBezier( X0, Y0, Xf, Yf, O="" ) {
 	    Time := RegExMatch(O,"i)T(\d+)",M)&&(M1>0)? M1: 200
@@ -70,11 +69,11 @@
 
 ## [ HowDoIStayInDreams / WindHumanMouse ](https://github.com/HowDoIStayInDreams/WindHumanMouse/blob/master/WindHumanMouse.ahk)
 
->The original creator is [BenLand100](https://github.com/BenLand100), and he wrote this algorithm in Pascal. Since the original it has been converted into Java, C#, and Python.
-HowDoIStayInDreams converted this code from C# in AHK.
+>The original creator is [BenLand100](https://github.com/BenLand100), and he wrote this algorithm in Pascal. Since the original it has been converted into Java, C#, and Python.  
+HowDoIStayInDreams converted this code from C# in AHK.  
 
-***Description***
-A simple linear interpolation that satisfied any human-mouse-speed assumptions would be easily identifiable as non-human when the angular distribution was observed, as it would have segments of discrete angles for each line. Replaying a finite set of real mouse movements would also be identifiable observing angular distributions. It is therefore critical to have some random algorithm that creates an acceptable angular distribution of steps, while still moving to a destination. The time distribution is relatively straightforward to satisfy, but the generation of paths with sufficiently human qualities is where WindMouse comes in.
+***Description***  
+A simple linear interpolation that satisfied any human-mouse-speed assumptions would be easily identifiable as non-human when the angular distribution was observed, as it would have segments of discrete angles for each line. Replaying a finite set of real mouse movements would also be identifiable observing angular distributions. It is therefore critical to have some random algorithm that creates an acceptable angular distribution of steps, while still moving to a destination. The time distribution is relatively straightforward to satisfy, but the generation of paths with sufficiently human qualities is where WindMouse comes in.  
 [Full Description Here](https://ben.land/post/2021/04/25/windmouse-human-mouse-movement/#windmouse)
 
     WindMouse(xs, ys, xe, ye, gravity, wind, minWait, maxWait, maxStep, targetArea, sleepsArray){
