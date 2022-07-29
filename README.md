@@ -8,7 +8,7 @@
 
 ## [Spawnova/ShinsImageScanClass](https://github.com/Spawnova/ShinsImageScanClass)
 
->ShinsImageScanClass is an AutoHotKey class designed for user freindliness and performance in mind, capable of searching for images and pixels extremely fast and also with background window support it's versatile and lightweight, with no additional dependancies. It also supports 32 and 64 bit.
+>ShinsImageScanClass is an AutoHotKey class designed for user friendliness and performance in mind, capable of searching for images and pixels extremely fast and also with background window support it's versatile and lightweight, with no additional dependencies. It also supports 32 and 64 bit.
 
 >**Youtube Tutorial Video**	  
 >[![Video](https://camo.githubusercontent.com/e022ea1af736202a29bf9792403a37f28aa476c0cd4643b76ab6cc31fffab6e5/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f7749646346364b554849452f64656661756c742e6a7067)](https://www.youtube.com/watch?v=wIdcF6KUHIE)
