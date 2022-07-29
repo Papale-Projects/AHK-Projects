@@ -2,9 +2,9 @@
 ## What is AutoHotKey?
 >*AutoHotkey is a free and open-source custom scripting language for Microsoft Windows.*
 >
-**Initial release date:** November 10, 2003
-**Developer(s):** Chris Mallett, Steve Gray
-[Documentation - Usage and Syntax](https://www.autohotkey.com/docs)
+**Initial release date:** November 10, 2003  
+**Developer(s):** Chris Mallett, Steve Gray  
+[Documentation - Usage and Syntax](https://www.autohotkey.com/docs)  
 
 ## My Code
 
