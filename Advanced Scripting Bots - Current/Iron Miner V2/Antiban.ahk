@@ -932,8 +932,8 @@ TarCenter(ColorID, Area, Misclickable:=0)
 	;Math to calculate the center of the target and uses the width/length to get a randomly weighted point
 	CalcX := ((BMarkX + CMarkX) / 2) + nrand(-MarkWidth, MarkWidth)
 	CalcY := ((DMarkY + AMarkY) / 2) + nrand(-MarkLength, MarkLength)
-	IniWrite,%CalcX%,C:\Users\WhoAmI\Desktop\My Scripts\API 2.0\Iron Miner V2\Variables.ini,ColorVars,TargetPaintX
-	IniWrite,%CalcY%,C:\Users\WhoAmI\Desktop\My Scripts\API 2.0\Iron Miner V2\Variables.ini,ColorVars,TargetPaintY
+	IniWrite,%CalcX%,C:\Users\WhoAmI\Desktop\My Scripts\Advanced Scripting Bots - Current\Iron Miner V2\Variables.ini,ColorVars,TargetPaintX
+	IniWrite,%CalcY%,C:\Users\WhoAmI\Desktop\My Scripts\Advanced Scripting Bots - Current\Iron Miner V2\Variables.ini,ColorVars,TargetPaintY
 	
 	return [CalcX, CalcY]
 }

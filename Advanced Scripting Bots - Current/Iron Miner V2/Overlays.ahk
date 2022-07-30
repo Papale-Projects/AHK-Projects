@@ -18,16 +18,16 @@ vinipath = %A_ScriptDir%\Variables.ini
 #include ShinsImageScanClass.ahk
 #Include WindHumanMouse.ahk
 #include InterfaceCords.ahk
-rs_scan := new ShinsImageScanClass("RuneLite - BigTeddy")
-rs_overlay := new ShinsOverlayClass("RuneLite - BigTeddy")
+rs_scan := new ShinsImageScanClass("RuneLite")
+rs_overlay := new ShinsOverlayClass("RuneLite")
 
 settimer,draw,5
 return
 
 draw:
-IniRead, vCA,C:\Users\WhoAmI\Desktop\My Scripts\API 2.0\Iron Miner V2\Variables.ini,ColorVars,ColorSearch
-IniRead, vPX,C:\Users\WhoAmI\Desktop\My Scripts\API 2.0\Iron Miner V2\Variables.ini,ColorVars,TargetPaintX
-IniRead, vPY,C:\Users\WhoAmI\Desktop\My Scripts\API 2.0\Iron Miner V2\Variables.ini,ColorVars,TargetPaintY
+IniRead, vCA,C:\Users\WhoAmI\Desktop\My Scripts\Advanced Scripting Bots - Current\Iron Miner V2\Variables.ini,ColorVars,ColorSearch
+IniRead, vPX,C:\Users\WhoAmI\Desktop\My Scripts\Advanced Scripting Bots - Current\Iron Miner V2\Variables.ini,ColorVars,TargetPaintX
+IniRead, vPY,C:\Users\WhoAmI\Desktop\My Scripts\Advanced Scripting Bots - Current\Iron Miner V2\Variables.ini,ColorVars,TargetPaintY
 rs_scan.PixelRegion(vCA,13,68,808,756,5,AMarkX,AMarkY)
 rs_scan.PixelRegion(vCA,13,68,808,756,5,BMarkX,BMarkY,"BTLR")
 rs_scan.PixelRegion(vCA,13,68,808,756,5,CMarkX,CMarkY,"BTRL")
