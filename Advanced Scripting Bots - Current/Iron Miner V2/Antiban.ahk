@@ -8,8 +8,8 @@ Global iY
 Global PlayerSeen
 Global OverlayX
 Global OverlayY
-Global rs_scan := new ShinsImageScanClass("RuneLite - BigTeddy")
-Global rs_overlay := new ShinsOverlayClass("RuneLite - BigTeddy")
+Global rs_scan := new ShinsImageScanClass("RuneLite")
+Global rs_overlay := new ShinsOverlayClass("RuneLite")
 
 ;0 is On/Ingame, 1 is Off/Minimap, 2 is for no area
 MyClick(Area, DoubleClicks)
