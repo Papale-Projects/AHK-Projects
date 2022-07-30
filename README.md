@@ -72,7 +72,7 @@
 
 ## [ HowDoIStayInDreams / WindHumanMouse ](https://github.com/HowDoIStayInDreams/WindHumanMouse/blob/master/WindHumanMouse.ahk)
 
->The original creator is [BenLand100](https://github.com/BenLand100), and he wrote this algorithm in Pascal. Since the original it has been converted into Java, C#, and Python.  
+>The original creator is [BenLand100](https://github.com/BenLand100), and he wrote this algorithm in Pascal. Since the original, it has been converted into Java, C#, and Python.  
 HowDoIStayInDreams converted this code from C# in AHK.  
 
 ***Description***  
