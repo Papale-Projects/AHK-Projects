@@ -23,9 +23,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #include ShinsOverlayClass.ahk
 
 F6::
-MouseGetPos, x, y
-Loop 2000
-	Click % nrand(x+100,x-100) ", " nrand(y+100,y-100)
+LogoutIn()
 return
 
 F4::

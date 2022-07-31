@@ -10,7 +10,6 @@ Global OverlayX
 Global OverlayY
 Global rs_scan := new ShinsImageScanClass("RuneLite")
 Global rs_overlay := new ShinsOverlayClass("RuneLite")
-IniRead, vPass,C:\Users\WhoAmI\Desktop\My Scripts\Advanced Scripting Bots - Current\Iron Miner V2\Password.ini,Passvar,Password
 
 ;0 is On/Ingame, 1 is Off/Minimap, 2 is for no area
 MyClick(Area, DoubleClicks)
@@ -303,17 +302,15 @@ Logout()
 LogoutIn()
 {
 	Status("Logging back in")
+	IniRead, vPass,C:\Users\WhoAmI\Desktop\My Scripts\Advanced Scripting Bots - Current\Iron Miner V2\Password.ini,Passvar,Password
 	ImageSearch, FoundX, FoundY, 152, 27, 919, 530, *50 C:\Users\WhoAmI\AppData\Roaming\MacroCreator\Screenshots\Screen_20210516142400.png
 	If (ErrorLevel = 0)
 	{
-		Random, Mspeed, 0.6, 0.9
-		MoveMouse(FoundX, FoundY, Mspeed)
-		MouseClickDelay()
+		MyMouseMove(FoundX, FoundY)
 		MyClick(2,1)
-		Random, Delay, 200, 450
-		
-		Random, Delay, 200, 450
-		Sleep, Delay
+		MouseAfterClickDelay()
+		Send %vPass%
+		MouseAfterClickDelay()
 		Send, {Enter}
 		Loop{
 			;wait for the click to play button and click on it
@@ -873,7 +870,7 @@ TarCenter(ColorID, Area, Misclickable:=0)
 		Lt := 140
 		ColorVariation := 25
 	}
-	IniWrite,%ColorID%,C:\Users\WhoAmI\Desktop\My Scripts\API 2.0\Iron Miner V2\Variables.ini,ColorVars,ColorSearch
+	IniWrite,%ColorID%,C:\Users\WhoAmI\Desktop\My Scripts\Advanced Scripting Bots - Current\Iron Miner V2\Variables.ini,ColorVars,ColorSearch
 	
 	;minimap 892,30,146,160
 	rs_scan.PixelRegion(ColorID,Xcord,Ycord,wd,Lt,ColorVariation,AMarkX,AMarkY)
