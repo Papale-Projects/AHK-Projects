@@ -10,8 +10,11 @@
 
  - [Antiban.ahk](https://github.com/Papale-Projects/AHK-Projects/blob/master/Complex%20Functions/Antiban.ahk) - Collection of functions referenced in all bots I produce. Primary use is for uniformity and to reduce redundancy. 
  - [InterfaceCords.ahk](https://github.com/Papale-Projects/AHK-Projects/blob/master/Complex%20Functions/InterfaceCords.ahk) - Recently updated, this function is used to calculate all tab locations from one given imagesearch.
- - [Overlays.ahk](https://github.com/Papale-Projects/AHK-Projects/blob/master/Complex%20Functions/Overlays.ahk) - This script is ran in conjunction with the main .ahk to provide a visual representation of pixel locations. Since AHK doesn't multithreading, I simulate that by read / writing to a .ini file to pass variables between scripts.
- - [GuiTesting.ahk](https://github.com/Papale-Projects/AHK-Projects/blob/master/Complex%20Functions/GUITesting.ahk) - Gui used to debug code with status messages. Also displays total runtime and counting variables. Gui attaches to client screen and moves with it.
+ - [Overlays.ahk](https://github.com/Papale-Projects/AHK-Projects/blob/master/Complex%20Functions/Overlays.ahk) - This script is ran in conjunction with the main .ahk to provide a visual representation of pixel locations. Since AHK doesn't multithreading, I simulate that by read / writing to a .ini file to pass variables between scripts.  
+  >This example shows a yellow border around the found object and the click location with a red marker. In this example the pixelsearch is looking for the dark blue colored border around the iron rock.    
+ >![enter image description here](https://github.com/Papale-Projects/AHK-Projects/blob/master/Advanced%20Scripting%20Bots%20-%20Current/Iron%20Miner%20V2/Overlayexample.PNG?raw=true)  
+ - [GuiTesting.ahk](https://github.com/Papale-Projects/AHK-Projects/blob/master/Complex%20Functions/GUITesting.ahk) - Gui used to debug code with status messages. Also displays total runtime and counting variables. Gui attaches to client screen and moves with it.  
+ >![enter image description here](https://github.com/Papale-Projects/AHK-Projects/blob/master/Advanced%20Scripting%20Bots%20-%20Current/Iron%20Miner%20V2/Gui.PNG?raw=true)
 
 ## [Spawnova/ShinsImageScanClass](https://github.com/Spawnova/ShinsImageScanClass)
 
@@ -69,7 +72,7 @@
 
 ## [ HowDoIStayInDreams / WindHumanMouse ](https://github.com/HowDoIStayInDreams/WindHumanMouse/blob/master/WindHumanMouse.ahk)
 
->The original creator is [BenLand100](https://github.com/BenLand100), and he wrote this algorithm in Pascal. Since the original it has been converted into Java, C#, and Python.  
+>The original creator is [BenLand100](https://github.com/BenLand100), and he wrote this algorithm in Pascal. Since the original, it has been converted into Java, C#, and Python.  
 HowDoIStayInDreams converted this code from C# in AHK.  
 
 ***Description***  
