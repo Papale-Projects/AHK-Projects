@@ -10,6 +10,7 @@ Global OverlayX
 Global OverlayY
 Global rs_scan := new ShinsImageScanClass("RuneLite")
 Global rs_overlay := new ShinsOverlayClass("RuneLite")
+IniRead, vPass,C:\Users\WhoAmI\Desktop\My Scripts\Advanced Scripting Bots - Current\Iron Miner V2\Password.ini,Passvar,Password
 
 ;0 is On/Ingame, 1 is Off/Minimap, 2 is for no area
 MyClick(Area, DoubleClicks)
@@ -310,43 +311,7 @@ LogoutIn()
 		MouseClickDelay()
 		MyClick(2,1)
 		Random, Delay, 200, 450
-		Sleep, Delay
-		Send, R
-		Random, Typer, 50, 110
-		Sleep, Typer
-		Send, 0
-		Random, Typer, 50, 110
-		Sleep, Typer
-		Send, b
-		Random, Typer, 50, 110
-		Sleep, Typer
-		Send, e
-		Random, Typer, 50, 110
-		Sleep, Typer
-		Send, r
-		Random, Typer, 50, 110
-		Sleep, Typer
-		Send, t
-		Random, Typer, 50, 110
-		Sleep, Typer
-		Send, p
-		Random, Typer, 50, 110
-		Sleep, Typer
-		Send, 9
-		Random, Typer, 50, 110
-		Sleep, Typer
-		Send, 9
-		Random, Typer, 50, 110
-		Sleep, Typer
-		Send, 5
-		Random, Typer, 50, 110
-		Sleep, Typer
-		Send, 2
-		Random, Typer, 50, 110
-		Sleep, Typer
-		Send, 2
-		Random, Typer, 50, 110
-		Sleep, Typer
+		
 		Random, Delay, 200, 450
 		Sleep, Delay
 		Send, {Enter}
