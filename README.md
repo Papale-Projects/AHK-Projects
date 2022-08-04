@@ -7,7 +7,7 @@
 [Documentation - Usage and Syntax](https://www.autohotkey.com/docs)  
 
 ## My Code  
-![enter image description here](https://im.ezgif.com/tmp/ezgif-1-ce07a23c39.gif)  
+![enter image description here](https://i.gyazo.com/a3f5e70aae3c19e450a9e85b8c17440e.gif)  
  - [Antiban.ahk](https://github.com/Papale-Projects/AHK-Projects/blob/master/Complex%20Functions/Antiban.ahk) - Collection of functions referenced in all bots I produce. Primary use is for uniformity and to reduce redundancy. 
  - [InterfaceCords.ahk](https://github.com/Papale-Projects/AHK-Projects/blob/master/Complex%20Functions/InterfaceCords.ahk) - Recently updated, this function is used to calculate all tab locations from one given imagesearch.
  - [Overlays.ahk](https://github.com/Papale-Projects/AHK-Projects/blob/master/Complex%20Functions/Overlays.ahk) - This script is ran in conjunction with the main .ahk to provide a visual representation of pixel locations. Since AHK doesn't multithreading, I simulate that by read / writing to a .ini file to pass variables between scripts.  
