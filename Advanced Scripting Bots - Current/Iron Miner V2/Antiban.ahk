@@ -115,7 +115,7 @@ AntibanAny()
 	{
 		OffScreenMouse()
 	}
-	Random, Anti, 1, 1800
+	Random, Anti, 1, 2500
 	If (Anti = 1)
 	{
 		IdleInGame()
@@ -140,7 +140,7 @@ AntibanBankwindow()
 
 AntiBanLog()
 {
-	Random, LogSleep, 1, 900
+	Random, LogSleep, 1, 1000
 	If (LogSleep = 1)
 	{
 		Logout()
@@ -243,7 +243,7 @@ OffScreenMouse()
 	sleep, LWaiting
 	MyMouseMove(AntiMX, AntiMY)
 	WinActivate, Untitled - Notepad
-	Sleep, RandomWeight(500, 2000, 30000)
+	Sleep, RandomWeight(500, 1000, 30000)
 	Status("Focusing OSRS")
 	WinActivate, ahk_class SunAwtFrame
 	WinWaitActive, ahk_class SunAwtFrame,, 2
